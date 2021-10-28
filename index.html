@@ -4,7 +4,23 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0"/>
     <title>franciscobaze</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script>function myFunc(){document.getElementById("demo").style.backgroundColor="black"}</script>
+    <script>
+
+     function myFunc(){
+        demo = document.querySelector("#demo");
+
+        if (demo.getAttribute("style") == "background-color: black;") {
+            demo.style.backgroundColor="white"
+            
+        } else {
+            demo.style.backgroundColor="black"
+        }
+
+        //document.getElementById("demo").style.backgroundColor="black"
+    }
+
+    </script>
+
 </head>
 <body style="background-color: white;" id="demo">
     <div class ="container">
